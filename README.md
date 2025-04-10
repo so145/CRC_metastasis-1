@@ -1,15 +1,21 @@
-# Spatial patterns in colorectal cancer metastasis
+# Code for the analyses in Ogden, Metic et al. "Phenotypic heterogeneity and plasticity in colorectal cancer metastasis"
 
-An arc bridging the gap from raw data to integrated spatial insights in patients with colorectal cancer metastasis. To date, metastasis remains the prevailing cause of cancer-related death in colorectal cancer (CRC) patients. CRC has undergone extensive genomic study showing low genomic divergence between primary (pCRC) and metastatic (lmCRC) tumours resected from the same patients. Metastasis-initiating cells (MICs) exhibit a profound transcriptional reprogramming from tumour-initiating cells, pointing to the role of plasticity in CRC progression and metastasis. However, the features and drivers of cancer cell plasticity in lmCRC need to be further characterised in order to improve patient treatment and outcome. Spatial transcriptomic profiles of multiple samples offer the possibility to interrogate how the cancer cells states and the TME interact, deciphering recurrent patterns among samples derived from patients. 
+Phenotypic heterogeneity and plasticity in colorectal cancer (CRC) is increasingly recognised as a driver of tumour progression, metastasis and therapy resistance. However, the regulatory factors and the extrinsic signals from the microenvironment driving phenotypic heterogeneity in primary and metastatic CRC remain unknown. 
 
-Using a combination of single-cell multi-omics, large-scale RNA-seq and spatial transcriptomics data derived from patient pCRC and mCRC tumours, the overarching aim of this project is to investigate the spatial landscape of cancer cell states and tumour microenvironment (TME) at the primary and the metastatic site at a fine-grained transcriptomic level. We characterise the transcriptional landscape of the TME of pCRC and lmCRC tumours, with the effort to build a comprehensive single-cell RNA-sequencing reference for spatial transcriptomics data. We identify cancer cells with regenerative and inflammatory signatures (iRECs) that are transcriptionally similar to MICs in CRC mouse models. 
+Using a combination of single-cell multiomics and spatial transcriptomics data from primary and metastatic CRC patients, we reveal cancer cell states with regenerative and inflammatory phenotypes that closely resemble metastasis-initiating cells in mouse models. We identify an intermediate population with a hybrid regenerative and stem phenotype, indicating phenotypic transitions between stem and pro-metastatic cells. We show that the regenerative cells have elevated activity of transcription factors AP-1 and NF-κB and validate the role of AP-1 using patient-derived organoids. 
 
-Using the spatial transcriptomic profiles of multiple samples, we interrogate how the cancer cell states and the TME interact, deciphering recurrent patterns among patient samples and spatially segregated cancer cell states. We show colocalisation of (i)RECs with immunosuppressive and inflammatory tumour-associated macrophages (TAMs), extracellular matrix (ECM) remodelling cancer-associated fibroblasts (CAFs) and myofibroblasts at the invasive edge in pCRC. Similarly in lmCRC iRECs reside in a spatial niche with SPP1+ TAMs, IL1B+ TAMs, myofibroblasts and ECM CAFs, suggesting their phenotype could be mediated by cellular crosstalk. 
+Our spatial analyses show localisation of the regenerative inflammatory states in an immunosuppressive niche both at the invasive edge in primary CRC and in liver metastasis. We uncover ligand-receptor interactions driven by cancer-associated fibroblasts (CAFs), immunosuppressive and inflammatory macrophages and exhausted CD8 T cells predicted to activate the regenerative and inflammatory phenotype in cancer cells. 
 
-Finally, we identify ligand-receptor interactions mediated by CAFs, immunosuppressive and inflammatory TAMs that shape the inflammatory regenerative programme in CRC malignant cells in liver metastases.
+Together, our findings reveal regulatory and signalling factors that mediate distinct cancer cell states and can serve as potential targets to restrict transition into invasive states to impair metastasis.
+
+## Highlights
+
+* Profiled liver metastatic samples from colorectal cancer patients using single-cell multiomics and integrated them with public primary and metastatic data.
+* Identified regenerative and inflammatory cancer cell states and showed that the transcription factors AP-1 and NF-κB are their key regulators.
+* The regenerative cells are localised at the invasive edge and reside in an immunosuppressive niche.
 
 ## Overview
-This project includes workflows covering data preprocessing, quality control, scRNA-seq/snRNA-seq integration (via scVI), dimensionality reduction, clustering, spatial deconvolution (cell2location), spatial niche inference and cell-cell communication (CellPhoneDB, NicheNet). Code for my [PhD thesis](https://qmro.qmul.ac.uk/xmlui/handle/123456789/103970) and for our [preprint](https://doi.org/10.21203/rs.3.rs-3846377/v1).
+This project includes workflows covering data preprocessing, quality control, scRNA-seq/snRNA-seq integration (via scVI), dimensionality reduction, clustering, spatial deconvolution (cell2location), spatial niche inference and cell-cell communication (CellPhoneDB, NicheNet). Code for our [manuscript](https://doi.org/10.21203/rs.3.rs-3846377/v1) Ogden, Metic et al. "Phenotypic heterogeneity and plasticity in colorectal cancer metastasis".
 
 <figure>
 <img src="workflow_overall.png"
