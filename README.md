@@ -22,7 +22,7 @@ This project includes workflows covering data preprocessing, quality control, sc
      alt=""
      width="100%" />
 <figcaption>
-    Overview of the computational workflow. Schematic describing the computational analysis done in this project. To infer the spatial arrangement of cancer cell states and TME cells defined by scRNA-seq data, I coupled scRNA-seq data to spatial transcriptomics data (10X Visium), revealing cellular niches and spatial interactions associated with specific spatial niches.
+    Overview of the computational workflow. Schematic describing the computational analysis done in this project. To examine the cellular heterogeneity and composition of malignant cell states and the tumour microenvironment in primary CRC and see how this landscape changes in liver metastasis, we integrated published pCRC scRNA-seq data and generated single nucleus Multiome RNA+ATAC data of liver metastasis. To predict transcriptional regulators of cancer cell states, we investigated the accessible chromatin landscape of cancer cells in our mCRC dataset. To infer the spatial arrangement of cancer cell states and TME cells defined by scRNA-seq data, we coupled scRNA-seq data to spatial transcriptomics data (10X Visium), revealing cellular niches and spatial interactions associated with specific spatial niches.
   </figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ Make sure that you have GPU support if running scVI or large scale cell2location
      alt=""
      width="70%" />
 <figcaption>
-    Overview of spatial niche identification workflow. Schematic describing the analysis of the spatial organisation of pCRC and lmCRC samples and identification of local niches surrounding cancer cell states. To elucidate the influence of TME on cancer cell states in pCRC and lmCRC samples, we require better understanding of the tumour architecture. Cell2location was applied to assign cell types to spots by integrating scRNA-seq and ST transcriptomes, yielding cell type abundance estimates per spot. Subsequently, I deciphered local niches surrounding the cancer cell states and identified spatially co-occurring cell types by spatially clustering on the cell type abundance estimates per spot across samples.
+    Overview of spatial niche identification workflow. Schematic describing the analysis of the spatial organisation of pCRC and lmCRC samples and identification of local niches surrounding cancer cell states. To elucidate the influence of TME on cancer cell states in pCRC and lmCRC samples, we require better understanding of the tumour architecture. Cell2location was applied to assign cell types to spots by integrating scRNA-seq and ST transcriptomes, yielding cell type abundance estimates per spot. Subsequently, we deciphered local niches surrounding the cancer cell states and identified spatially co-occurring cell types by spatially clustering on the cell type abundance estimates per spot across samples.
   </figcaption>
 </figure>
 
